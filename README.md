@@ -1,4 +1,4 @@
-## Installing OpenWall2 with Hysteria 2 Node on a OpenWrt Router
+## Installing OpenWall2 on a GL-iNet MT3000/OpenWrt Router for Vless/Hysteria2 Proxy 
 ___
 
 > [!NOTE]
@@ -8,13 +8,14 @@ ___
 > I'm not responsible if this guide brick your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
 
 > [!IMPORTANT]
-> I setup this up on a **GL-iNet MT3000(Beryl AX) Travel WiFi router**. But this guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage. The router will have use up of total ~220MB of flash storage after setting up the Hysteria2 client node.
+> I setup this up on a **GL-iNet MT3000(Beryl AX) Travel WiFi router**. But this guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage. The router will have use up of total ~220MB of flash storage after setting up the Vless/Hysteria2 client node.
 
 ### Prerequisites
 ___
-1. Make sure you're connected to the router in the same IP address and and able to connect to it e.g. http://192.168.8.1/.
-2. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
-3. Make sure to install LuCI interface in the `Advanced Settings` of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after sshing into the router and using `opkg update` command after step 2.
+1. Download the latest version of GL-iNet's fork of OpenWrt firmware at https://dl.gl-inet.com/router/mt3000/openwrt24.
+2. From the **System** menu, select **Upgrade**, and upload downloaded firmware from **Firmware Local Upgrade** menu.
+3. Once finish installing the OpenWrt firmware, the router will reboot. 
+3. Make sure to install LuCI interface in the **Advanced Settings` of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after sshing into the router and using `opkg update` command after step 2.
 
 ### Installation
 ___
