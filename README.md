@@ -1,3 +1,5 @@
+# This guide currently does NOT Work!!! I think the iStore repo hasn't been updated and is causing conflicting issue with packages from the GL-iNet repo.
+
 ## Installing OpenWall2(Vless/Hysteria2) on a GL-iNet MT3000 Router with Fork version of OpenWrt
 ___
 
