@@ -1,8 +1,8 @@
-## Installing OpenWall2 on a GL-iNet MT3000/OpenWrt Router for Vless/Hysteria2 Proxy 
+## Installing OpenWall2(Vless/Hysteria2) on a GL-iNet MT3000 Router with Fork version of OpenWrt
 ___
 
 > [!NOTE]
-> I use the [following guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) on setting up a Hysteria2 server and a client on a desktop PC to test the server is working.
+> As of writing of this guide, GL-iNet newest fork for OpenWrt is 24.10 and have not release a fork of 25.12. I use the [following guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) on setting up a Hysteria2 server and a client on a desktop PC to test the server is working.
 
 > [!WARNING]
 > I'm not responsible if this guide brick your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
@@ -16,7 +16,7 @@ ___
 2. Log into the GL-Inet's Web Admin Panel at http://192.168.8.1
 3. From the `System` menu, select `Upgrade`, and upload downloaded firmware from `Firmware Local Upgrade` menu.
 4. Once finish installing the OpenWrt firmware and after the router will reboot, and log back into router.
-5. Got to the `Advanced Settings` menu and select `Install Now` to install OpenWrt's Luci Web Admin.
+5. Got to the `Advanced Settings` menu and select `Install Now` to install OpenWrt's LuCI Web Admin.
 
 ### Installation
 ___
@@ -27,7 +27,7 @@ Step 2. Run update for OpenWrt packages.
 opkg update
 ```
 > [!NOTE]
->If you haven't install LUCI from the Admin Panel webpage, use the following command to install it.
+>If you haven't install LuCI from the Admin Panel webpage, use the following command to install it.
 ```bash
 opkg install luci-app-opkg
 ```
